@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 1 — Run Python in the right folder</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+  </head>
+  <body>
+    <h1>Lesson 1 — Run Python in the right folder</h1>
+    <p>
+      This matches your mission: be able to run lab commands without fighting the shell. You already know
+      <code>npm run dev</code>; Python adds a virtualenv and slightly different paths.
+    </p>
+    <h2>Ideas (not commands yet)</h2>
+    <ul>
+      <li><strong>Current directory matters.</strong> <code>python exercises/values.py</code> only works if that path exists from where you are standing in the terminal—same as <code>node src/app.js</code>.</li>
+      <li><strong>venv</strong> is a folder of Python + installed packages for this project. After you <em>activate</em> it, <code>python</code> and <code>pip</code> point at the project, not a random install.</li>
+      <li><strong>Git Bash</strong> uses <code>source .venv/Scripts/activate</code>, not backslashes, for activation.</li>
+    </ul>
+    <h2>Do this once (python-warmup)</h2>
+    <pre><code>cd /d/Grind/Backend-from-first-Principle/labs/python-warmup
+source .venv/Scripts/activate
+python -m pytest -q</code></pre>
+    <p>Green output means “this folder’s Python + tests work.” If you are not in <code>python-warmup</code>, tests will not find the project layout.</p>
+    <h2>Try one line</h2>
+    <pre><code>python -c "print('ok')"</code></pre>
+    <p>You should see <code>ok</code>. That proves the active interpreter runs code.</p>
+    <h2>Primary source</h2>
+    <p>
+      <a href="https://docs.python.org/3/tutorial/interpreter.html">Python tutorial — Using the Python interpreter</a>
+    </p>
+    <p class="note">
+      Ask in chat if anything errors—paste the full terminal line and the exact command you ran. Next lesson (when you are ready): open
+      <code>exercises/values.py</code> and run <code>pytest</code> after a one-line change, not five topics at once.
+    </p>
+  </body>
+</html>

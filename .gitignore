@@ -9,3 +9,13 @@ text-files/
 .vercel
 .env*
 ponytail/
+
+# Python labs
+**/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local agent skills (e.g. npx skills@latest install — mattpocock/skills)
+.agents/skills/

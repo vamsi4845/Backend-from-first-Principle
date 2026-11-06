@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reference — Terminal: Node vs Python (this repo)</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+  </head>
+  <body>
+    <h1>Terminal cheat sheet — Node vs Python (this repo)</h1>
+    <table border="0" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Goal</th>
+          <th>Node / npm</th>
+          <th>Python (labs)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Project packages</td>
+          <td><code>npm install</code> → <code>node_modules/</code></td>
+          <td><code>pip install -r requirements.txt</code> → <code>.venv/…</code></td>
+        </tr>
+        <tr>
+          <td>Activate environment</td>
+          <td>(often none; or <code>nvm use</code>)</td>
+          <td><code>source .venv/Scripts/activate</code> (Git Bash)</td>
+        </tr>
+        <tr>
+          <td>Run one file</td>
+          <td><code>node path/to/file.js</code></td>
+          <td><code>python path/to/file.py</code></td>
+        </tr>
+        <tr>
+          <td>Run tests</td>
+          <td><code>npm test</code> / <code>npx vitest</code></td>
+          <td><code>python -m pytest -q</code></td>
+        </tr>
+        <tr>
+          <td>Run API server</td>
+          <td><code>npm run dev</code></td>
+          <td><code>uvicorn app.main:app --reload</code> from <code>labs/task-api</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Path rule:</strong> If <code>python exercises/values.py</code> errors with “no such file,” check <code>pwd</code> (or <code>cd</code>) first.</p>
+  </body>
+</html>

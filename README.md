@@ -46,6 +46,10 @@ The documentation is organized into the following topics:
 
 Feel free to browse through the directories to explore specific topics. Each directory contains detailed markdown notes, code examples, and practical implementations.
 
+## Hands-on labs (FastAPI)
+
+If you learn by building, use the **[labs/](./labs/)** track: a weekly **6–8 hour** capstone (`labs/task-api/`) with checklists tied to the chapters. Fork this repo (make it private if you like) and commit your progress under `labs/` without waiting on upstream.
+
 ## Install as an App (PWA)
 
 The live site is a Progressive Web App. In Chrome, Edge, or Safari you can use **Install app** / **Add to Home Screen** to pin it to your launcher or dock. Visited pages stay available offline after the first load; the service worker refreshes HTML from the network when you are online so chapter updates still show up.
